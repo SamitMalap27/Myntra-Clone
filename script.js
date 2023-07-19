@@ -29,7 +29,8 @@ document.addEventListener("click", (e) => {
     const dressesEl = document.getElementById("dresses").checked
     const wtshirtEl = document.getElementById("wtshirt").checked
 
-// for brands
+ // for brands
+ 
     const RoadsterEl = document.getElementById("roadster").checked 
     const AnoukEl = document.getElementById("anouk").checked
     const PhilipsEl = document.getElementById("philips").checked 
@@ -42,34 +43,6 @@ document.addEventListener("click", (e) => {
     const HIGHLANDEREl = document.getElementById("highlander").checked
     const MEENAZEl = document.getElementById("meenaz").checked
     const NOISEEl = document.getElementById("noise").checked
-//    const Mitera = document.getElementById("").checked
-//    const BOULTAUDIOEl = document.getElementById("").checked
-   // const TimexEl = document.getElementById("").checked
-   // const House of PataudiEl = document.getElementById("").checked
-   // const iPhone BackcoverEl = document.getElementById("").checked
-   // const DailyObjectsEl = document.getElementById("").checked
-   // const EYNKEl = document.getElementById("").checked
-   // const SatraniEl = document.getElementById("").checked 
-   // const ASPORAEl = document.getElementById("").checked
-   // const Silk LandEl = document.getElementById("").checked
-   // const FossilEl = document.getElementById("").checked
-   // const FastrackEl = document.getElementById("").checked
-   // const The Souled StoreEl = document.getElementById("").checked
-   // const WROGNEl = document.getElementById("").checked 
-   // const OnePlusEl = document.getElementById("").checked
-   // const Red TapeEl = document.getElementById("").checked
-   // const RaymondEl = document.getElementById("").checked 
-   // const Mast & HarbourEl = document.getElementById("").checked
-   // const Michael KorsEl = document.getElementById("").checked
-   // const PumaEl = document.getElementById("").checked
-   // const JOKER & WITCHEl = document.getElementById("").checked 
-   // const anaynaEl = document.getElementById("").checked 
-   // const MYKIEl = document.getElementById("").checked
-   // const Indo EraEl = document.getElementById("").checked
-   // const DILLINGEREl = document.getElementById("").checked
-   // const Carlton LondonEl = document.getElementById("").checked
-
-
 
     console.log(bluetoothEl)
     filterData = ProductData.filter(el => (
@@ -88,7 +61,8 @@ document.addEventListener("click", (e) => {
        dressesEl && el.category == "dresses" ||
        wtshirtEl&& el.category == "wtshirt" ||
 
-// filter for brands
+  // filter for brands
+     
        RoadsterEl && el.name == "Roadster" ||
         AnoukEl && el.name == "Anouk" || 
         PhilipsEl&& el.name == "Philips" ||
@@ -161,15 +135,6 @@ function renderProductData(){
     document.getElementById("product_category_displayId").innerHTML = filterDataHTML
 } 
 renderProductData()
-
-
-
-// function ClickProduct(id){
-//     localStorage.setItem("productId",JSON.stringify(id))
-//     // window.location("./page/product.html")
-
-//     alert("hii")
-// }
 
 
 
