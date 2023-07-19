@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 15px;
+}
+h5{
+    font-family: 'Roboto Condensed','Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+h6{
+    color: #d8d8d8;
+}
+
+.navbar{
+    font-size: 16px;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
+    color: palevioletred;
+}
+nav{
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-size: larger;
+}
+nav div div a img{
+    padding: 0 0 0 5px;
+    /* for cart img */
+}
+nav div div form{
+    margin: 10px 0px;
+    padding: 0 10px 0 10;
+    /* for cart img */
+}
+nav div div form img{
+    height: 50px;
+    width: 50px;
+    /* for search icon */
+}
+
+.searchInputContainer{
+    max-width: 500px;
+    display: flex;
+}
+
+.searchIcon{
+    margin: 10px 10px;
+    height: 15px;
+    width: 15px;
+}
+
+/* nav css */
+
+nav div div ul li:hover{
+    border-bottom: 2px solid palevioletred;
+}
+
+.signup{
+    cursor: pointer;
+}
+
+/* carousol css */
+#carouselExampleAutoplaying{
+    margin-top: 88px;
+}
+main{
+    margin-top: 88px;
+}
+
+#headers{
+ margin-left : 20px;
+ margin-top:10px ;
+ display: block;
+ margin-bottom: 25px;
+ height: 32px;
+ width: 100%;
+ text-align: left;
+ font-family: 'Kanit', sans-serif;
+ font-size:40px;
+ width: 100%;
+}
+#deals{
+    margin: 20px;
+}
+#toppicks{
+    margin: 20px;
+}
+#her{
+    margin: 20px;
+}
+#him{
+    margin: 20px;
+}
+#bag{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+#luxe{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer div div ul a {
+    text-decoration: none;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: #1c1c1c;
+    font-size: 15px;
+}
+footer li a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Product CSS */
+.display_Category_list{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.display_Category_list label{
+    margin: 3px 0px;
+    text-transform: capitalize;
+}
+
+.productCard{
+    max-width: 250px;
+    padding: 10px;
+    box-shadow: -1px -1px 5px rgba(0,0,0,0.1),
+    1px 1px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border: 1px solid rgb(250, 248, 248);
+    cursor: pointer;
+}
+.product_image{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product_image img{
+   
+    width: 100%;
+    height: 100%;
+    
+}
+
+.product_name{
+    text-transform: capitalize;
+}
+
+

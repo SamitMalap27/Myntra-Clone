@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Myntra Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://pixlok.com/wp-content/uploads/2021/10/Myntra-Logo-PNG-ovjndf3.jpg"
+        type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light py-2 fixed-top">
+        <div class="container-fluid">
+            <a href="/index.html"><img src="img/logo.png" alt="MYNTRA"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link bborder active" aria-current="page" href="/product.html">MEN</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link bborder " href="/product.html">WOMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bborder " href="/product.html">KIDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bborder " href="/product.html">HOME & LIVING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bborder " href="/product.html">BEAUTY</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="text" placeholder="Search for product,brand"
+                        aria-label="Search" width="150px">
+                    <img class="btn" type="submit" src="img/search.png" alt="Q">
+                    <!-- <button class="btn btn-outline-dark" type="submit">Search</button> -->
+                </form>
+
+                <a href="#">
+                    <img class="btn " data-bs-toggle="modal" data-bs-target="#loginModal" src="img/user.png"
+                        width="50px" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/cart.png" width="30px" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Login modal start -->
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login to Myntra</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check" style="padding-left: 0;">
+                            <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+                            <p class="signup">New User ,<strong>Sign up here !</strong></p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login modal end-->
+
+    <!-- Products start -->
+
+    <main>
+
+
+        <div class="container-fluid mt-4">
+
+            <div class="row">
+
+                <!-- 1st Column Start -->
+                <div class="col-md-2 fw-bold">
+
+                    <!-- Aside Start -->
+                    <aside class="">
+
+                        <h4>Category</h4>
+                        <div class="display_Category_list">
+                            <!-- men section -->
+                            <h4>Men</h4>
+                            <label for="chains">
+                                <input type="checkbox" id="chains" />
+                                <span>Men Chains</span>
+                            </label>
+                            <label for="kurtas">
+                                <input type="checkbox" id="kurtas" />
+                                <span>Kurtas</span>
+                            </label>
+                            <label for="mentshirt">
+                                <input type="checkbox" id="mentshirt" />
+                                <span>Tshirts</span>
+                            </label>
+                            <label for="menshirt">
+                                <input type="checkbox" id="menshirt" />
+                                <span>Shirts</span>
+                            </label>
+                            <label for="watch">
+                                <input type="checkbox" id="watch" />
+                                <span>watches</span>
+                            </label>
+                            <!-- women section -->
+                            <h4>Women</h4>
+                            <label for="sarees">
+                                <input type="checkbox" id="sarees" />
+                                <span>sarees</span>
+                            </label>
+                            <label for="shoes">
+                                <input type="checkbox" id="shoes" />
+                                <span>shoes</span>
+                            </label>
+                            <label for="wwatch">
+                                <input type="checkbox" id="wwatch" />
+                                <span>Watches</span>
+                            </label>
+                            <label for="wkurta">
+                                <input type="checkbox" id="wkurta" />
+                                <span>Kurtas</span>
+                            </label>
+                            <label for="jwellery">
+                                <input type="checkbox" id="jwellery" />
+                                <span>Jwellery</span>
+                            </label>
+                            <label for="dresses">
+                                <input type="checkbox" id="dresses" />
+                                <span>Dresses</span>
+                            </label>
+                            <label for="wtshirt">
+                                <input type="checkbox" id="wtshirt" />
+                                <span>Tshirts</span>
+                            </label>
+                            <!-- mobile accessories section -->
+                            <h4>Mobile accessories</h4>
+                            <label for="accessories">
+                                <input type="checkbox" id="accessories" />
+                                <span>Back cover</span>
+                            </label>
+                            <label for="bluetooth">
+                                <input type="checkbox" id="bluetooth" />
+                                <span>bluetooth Headset</span>
+                            </label>
+                            <!-- brands -->
+                            <h4>Brands</h4>
+                            <label for="philips">
+                                <input type="checkbox" id="philips" />
+                                <span>Philips</span>
+                            </label>
+                            <label for="roadster">
+                                <input type="checkbox" id="roadster" />
+                                <span>Roadster</span>
+                            </label>
+                            <label for="anouk">
+                                <input type="checkbox" id="anouk" />
+                                <span>Anouk</span>
+                            </label>
+                            <label for="boat">
+                                <input type="checkbox" id="boat" />
+                                <span>boAt</span>
+                            </label>
+                            <label for="hammer">
+                                <input type="checkbox" id="hammer" />
+                                <span>HAMMER</span>
+                            </label>
+                            <label for="mivi">
+                                <input type="checkbox" id="mivi" />
+                                <span>mivi</span>
+                            </label>
+                            <label for="puma">
+                                <input type="checkbox" id="puma" />
+                                <span>PUMA Motorsport</span>
+                            </label>
+                            <label for="highlander">
+                                <input type="checkbox" id="highlander" />
+                                <span>HIGHLANDER</span>
+                            </label>
+                            <label for="meenaz">
+                                <input type="checkbox" id="meenaz" />
+                                <span>MEENAZ</span>
+                            </label>
+                            <label for="portonics">
+                                <input type="checkbox" id="portonics" />
+                                <span>Portronics</span>
+                            </label>
+                            <label for="cellecor">
+                                <input type="checkbox" id="cellecor" />
+                                <span>Cellecor</span>
+                            </label>
+                            <label for="noise">
+                                <input type="checkbox" id="noise" />
+                                <span>NOISE</span>
+                            </label>
+                        </div>
+
+                    </aside>
+                    <!-- Aside End -->
+                </div>
+                <!-- 1st Column End -->
+
+
+                <!-- 2nd Column Start -->
+                <div class="col-md-10">
+
+                    <!-- Section Start -->
+                    <section>
+
+
+                        <div class="row" id="product_category_displayId">
+
+                        </div>
+
+
+                    </section>
+                    <!-- Section Start -->
+
+                </div>
+                <!-- 2nd Column End -->
+
+            </div>
+
+        </div>
+
+    </main>
+    <!-- Products end -->
+
+    <!-- Footer start -->
+    <footer class=" py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2"><strong>ONLINE SHOPPING </strong> </h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="/product.html">men</a></li>
+                    <li><a href="/product.html">women</a></li>
+                    <li><a href="/product.html">boys</a></li>
+                    <li><a href="/product.html">girls</a></li>
+                    <li><a href="/product.html">new arrivals</a></li>
+                    <li><a href="/product.html">shoes</a></li>
+                    <li><a href="/product.html">clothes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2"><strong>CUSTOMER POLICIES </strong> </h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">t&c</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Terms of order</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">cancellation</a></li>
+                    <li><a href="#">return</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2"><strong>EXPERIENCE MYNTRA APP ON MOBILE </strong></h5>
+                <img src="img/playstore.png" alt="" style="width:150px; height: auto;">
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <div style="display: flex;">
+                    <img class="m-2" src="img/100.png" alt="" style=" width:40px; height: auto;">
+                    <p><strong>100% ORIGINAL </strong>guarantee for all products at myntra.com </p>
+                </div>
+                <div style="display: flex;">
+                    <img class="m-1" src="img/14.png" alt="" style=" width:40px; height: auto;">
+                    <p><strong>Return within 14days </strong>of receiving your order</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-6 col-md-6 col-6">
+                    <p>In case of any concern, <strong>Contact Us</strong> </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-6" style="text-align: right;">
+                    <p>© 2023 www.myntra.com. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myntra Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://pixlok.com/wp-content/uploads/2021/10/Myntra-Logo-PNG-ovjndf3.jpg"
+    type="image/x-icon">
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg  navbar-light bg-light py-2 fixed-top">
+    <div class="container-fluid">
+      <a href="/index.html"><img src="img/logo.png" alt="MYNTRA"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link bborder active" aria-current="page" href="/product.html">MEN</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link bborder " href="/product.html">WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bborder " href="/product.html">KIDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bborder " href="/product.html">HOME & LIVING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bborder " href="/product.html">BEAUTY</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="text" placeholder="Search for product,brand" aria-label="Search"
+            width="150px">
+          <img class="btn" type="submit" src="img/search.png" alt="Q">
+          <!-- <button class="btn btn-outline-dark" type="submit">Search</button> -->
+        </form>
+
+        <a href="#">
+          <img class="btn " data-bs-toggle="modal" data-bs-target="#loginModal" src="img/user.png" width="50px" alt="">
+        </a>
+        <a href="#">
+          <img src="img/cart.png" width="30px" alt="">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+
+  <!-- Login modal start -->
+
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Login to Myntra</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check" style="padding-left: 0;">
+              <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+              <p class="signup">New User ,<strong>Sign up here !</strong></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Login modal end-->
+
+  <!-- Carousel start -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-1.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item " style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-2.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item " style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-3.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item " style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-4.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item " style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-5.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item " style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-6.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+      <div class="carousel-item " style="height: 100%">
+        <a href="/product.html"><img src="img/carouselimg/myntra-7.jpg" class="d-block w-100" alt="..."></a>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel end -->
+
+  <section id="headers" class="container">
+    <div>
+      DEAL OF THE DAY
+    </div>
+  </section>
+
+  <!-- Deals Section start -->
+  <section id="deals">
+    <a href="/product.html">
+      <div id="div1" class="row">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/deals/deal1.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/deals/deal2.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/deals/deal3.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/deals/deal4.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/deals/deal5.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/deals/deal6.png" alt="">
+      </div>
+    </a>
+  </section>
+  <!-- Deals Section end-->
+
+  <section id="headers" class="container">
+    <div>
+      TOP PICKS
+    </div>
+  </section>
+
+  <!-- Top Picks Section start -->
+  <section id="toppicks">
+    <a href="/product.html">
+      <div id="div1" class="row">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/toppicks/top1.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/toppicks/top2.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/toppicks/top3.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/toppicks/top4.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/toppicks/top5.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/toppicks/top6.png" alt="">
+      </div>
+    </a>
+  </section>
+  <!-- Top picks Section end-->
+
+  <section id="headers" class="container">
+    <div>
+      CATEGORIES TO BAG
+    </div>
+  </section>
+
+  <!-- BAG section start -->
+  <section id="bag">
+    <a href="/product.html">
+      <div id="div1" class="row">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag1.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag2.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag21.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag5.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag13.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag14.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag15.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag16.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag17.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag18.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag19.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bag/bag20.png" alt="">
+      </div>
+    </a>
+  </section>
+  <!-- BAG section end -->
+
+  <section id="headers" class="container">
+    <div>
+      TRENDS FOR HER
+    </div>
+  </section>
+
+  <!-- HER Section start -->
+  <section id="her">
+    <a href="/product.html">
+      <div id="div1" class="row">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/her1.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/her2.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/her3.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/her4.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/her5.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/her6.png" alt="">
+      </div>
+    </a>
+  </section>
+  <!-- HER Section end-->
+
+  <section id="headers" class="container">
+    <div>
+      TRENDS FOR HIM
+    </div>
+  </section>
+
+  <!-- HIM Section start -->
+  <section id="him">
+    <a href="/product.html">
+      <div id="div1" class="row">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/him1.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/him2.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/him3.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/him4.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/him5.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/HimHer/him6.png" alt="">
+      </div>
+    </a>
+  </section>
+  <!-- HIM Section end-->
+
+  <section id="headers" class="container">
+    <div>
+      MYNTRA LUXE
+    </div>
+  </section>
+
+  <!-- luxe section start -->
+  <section id="luxe">
+    <a href="/product.html">
+      <div id="div1" class="row">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe1.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe2.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe3.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe4.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe5.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe6.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe7.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe8.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe9.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe10.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe11.png" alt="">
+        <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/luxe/luxe12.png" alt="">
+      </div>
+    </a>
+  </section>
+  <!-- luxe section end -->
+
+  <!-- Footer start -->
+  <footer class=" py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 class="pb-2"><strong>ONLINE SHOPPING </strong> </h5>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="/product.html">men</a></li>
+          <li><a href="/product.html">women</a></li>
+          <li><a href="/product.html">boys</a></li>
+          <li><a href="/product.html">girls</a></li>
+          <li><a href="/product.html">new arrivals</a></li>
+          <li><a href="/product.html">shoes</a></li>
+          <li><a href="/product.html">clothes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 class="pb-2"><strong>CUSTOMER POLICIES </strong> </h5>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="#">contact us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">t&c</a></li>
+          <li><a href="#">Terms of use</a></li>
+          <li><a href="#">Terms of order</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">cancellation</a></li>
+          <li><a href="#">return</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 class="pb-2"><strong>EXPERIENCE MYNTRA APP ON MOBILE </strong></h5>
+        <img src="img/playstore.png" alt="" style="width:150px; height: auto;">
+      </div>
+
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <div style="display: flex;">
+          <img class="m-2" src="img/100.png" alt="" style=" width:40px; height: auto;">
+          <p><strong>100% ORIGINAL </strong>guarantee for all products at myntra.com </p>
+        </div>
+        <div style="display: flex;">
+          <img class="m-1" src="img/14.png" alt="" style=" width:40px; height: auto;">
+          <p><strong>Return within 14days </strong>of receiving your order</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright mt-5">
+      <div class="row container mx-auto">
+        <div class="col-lg-6 col-md-6 col-6">
+          <p>In case of any concern, <strong>Contact Us</strong> </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-6" style="text-align: right;">
+          <p>© 2023 www.myntra.com. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Footer end -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
